@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+        <div class="content">
+            <div class="title-ctn"><h1 class="title">Temperature converter</h1></div>
+          <div><p>Convert</p></div>
+          <input type="text" id="number" />
+
+
+        <div class="dropdown-content">
+          <div class="dropdown-ctn">
+            <p>From</p>
+            <div class="dropdown">
+
+              <label class="custom-radio">
+                <input type="radio" name="option" id="celciusInput">
+                <span class="radio-mark">Celsius</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="option" id="fahrenheitInput">
+                <span class="radio-mark">Fahrenheit</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="option" id="kelvinInput">
+                <span class="radio-mark">Kelvin</span>
+              </label>
+            </div>
+          </div>
+
+
+          <div id="seconddropdown" class="dropdown-ctn">
+            <p>To</p>
+            <div class="dropdown">
+              <label class="custom-radio">
+                <input type="radio" name="option2" id="celsiusInput2">
+                <span class="radio-mark">Celsius</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="option2" id="fahrenheitInput2">
+                <span class="radio-mark">Fahrenheit</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="option2" id="kelvinInput2">
+                <span class="radio-mark">Kelvin</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+          <button class="btn-text" onclick="saveInput()">Calculate</button>
+
+          <div class="result-ctn">
+            <div class="tax-amount-ctn">
+              <p id="show-input"></p>
+              <p id="show-result"></p>
+            </div>
+          </div>
+    </section>
+  </body>
+</html>

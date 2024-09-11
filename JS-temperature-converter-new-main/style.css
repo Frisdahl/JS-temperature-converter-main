@@ -1,0 +1,124 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+  width: 35vw;
+}
+
+.title-ctn {
+  width: 100%;
+  padding: 10px;
+  background-color: #21418a;
+  text-align: center;
+  color: #fff;
+}
+
+.tax-amount-ctn {
+  display: flex;
+}
+
+.dropdown-content {
+  display: flex;
+}
+
+.dropdown-ctn {
+  margin-top: 15px;
+  display: block;
+  position: relative;
+  width: 200px;
+}
+
+.dropdown {
+  display: block; /* Make it always visible */
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#seconddropdown {
+  margin-left: 25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.final-amount-ctn {
+  display: flex;
+}
+
+.btn-text {
+  margin-top: 15px;
+  font-size: 2em;
+  padding: 10px;
+  color: #21418a;
+  background-color: #f4f4f5;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.result-ctn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #a8aaae;
+  border-radius: 10px;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+.custom-radio {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.custom-radio input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.radio-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Checked state */
+.custom-radio input:checked + .radio-mark {
+  background-color: grey;
+}
